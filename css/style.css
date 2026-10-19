@@ -335,7 +335,10 @@ body.has-action-bar { padding-bottom: 84px; }
   body.has-action-bar { padding-bottom: 0; }
   .ba-list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
   .ba img { aspect-ratio: 4 / 3; }
-  .locations { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .location.wide { flex-direction: row; }
+  .location.wide > * { flex: 1 1 0; min-width: 0; }
+  .location.wide .location-body { align-content: center; padding: 36px; }
+  .location.wide .map { margin-top: 0; border-top: 0; border-left: 1px solid var(--line); aspect-ratio: auto; min-height: 320px; }
   .footer-inner { grid-template-columns: 1fr auto; align-items: end; }
 }
 
@@ -352,7 +355,7 @@ body.has-action-bar { padding-bottom: 84px; }
   .values li { justify-content: center; padding: 22px 8px; }
   .services { gap: 16px; }
   .pkg { grid-template-columns: 1fr 1fr; gap: 20px; }
-  .gallery { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+  .gallery { gap: 12px; }
   .dealers-inner { grid-template-columns: 0.9fr 1.1fr; gap: 56px; align-items: center; }
   .features { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .feature { grid-template-columns: 1fr; }
