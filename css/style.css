@@ -176,13 +176,21 @@ mark.ph { background: #ffe58a; color: #2a2000; border-radius: 4px; padding: 0 0.
   background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px;
 }
 .service h3 { font: 700 1.6rem/1.1 var(--font-cond); text-transform: uppercase; letter-spacing: 0.01em; }
-.service p { color: var(--muted); flex-grow: 1; }
+.service p { color: var(--muted); }
 .service .no { font: 700 0.95rem/1 var(--font-cond); color: var(--gold); letter-spacing: 0.1em; }
 .chips { display: flex; flex-wrap: wrap; gap: 6px; }
 .chips li { font-size: 0.82rem; font-weight: 500; padding: 4px 10px; border-radius: 999px; background: var(--surface-2); border: 1px solid var(--line); color: var(--text); }
 .price { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; border-top: 1px solid var(--line); padding-top: 14px; }
 .price span { color: var(--muted); font-size: 0.9rem; }
 .price strong { font: 700 1.6rem/1 var(--font-cond); color: var(--text); }
+.pkg { display: grid; gap: 16px; padding: 4px 0 6px; flex-grow: 1; align-content: start; }
+.pkg h4 { margin: 0 0 8px; font: 600 0.8rem/1.2 var(--font); letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); }
+.checks { display: grid; gap: 8px; }
+.checks li { position: relative; padding-left: 26px; line-height: 1.4; }
+.checks li::before {
+  content: ""; position: absolute; left: 3px; top: 0.2em; width: 6px; height: 11px;
+  border: solid var(--gold); border-width: 0 2.5px 2.5px 0; transform: rotate(45deg);
+}
 .service.featured { background: linear-gradient(160deg, #241c08 0%, var(--surface) 55%); border-color: rgba(246, 180, 23, 0.6); }
 .badge { position: absolute; top: 20px; right: 20px; background: var(--gold); color: var(--gold-ink); font: 700 0.75rem/1 var(--font); letter-spacing: 0.08em; text-transform: uppercase; padding: 6px 10px; border-radius: 999px; }
 .price-note { margin-top: 20px; color: var(--muted); font-size: 0.95rem; }
@@ -342,7 +350,8 @@ body.has-action-bar { padding-bottom: 84px; }
   .hero-media img { aspect-ratio: 4 / 5; }
   .values ul { grid-template-columns: repeat(5, minmax(0, 1fr)); }
   .values li { justify-content: center; padding: 22px 8px; }
-  .services { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+  .services { gap: 16px; }
+  .pkg { grid-template-columns: 1fr 1fr; gap: 20px; }
   .gallery { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
   .dealers-inner { grid-template-columns: 0.9fr 1.1fr; gap: 56px; align-items: center; }
   .features { grid-template-columns: repeat(2, minmax(0, 1fr)); }
