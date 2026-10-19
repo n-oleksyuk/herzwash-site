@@ -355,7 +355,7 @@ body.has-action-bar { padding-bottom: 84px; }
   .values li { justify-content: center; padding: 22px 8px; }
   .services { gap: 16px; }
   .pkg { grid-template-columns: 1fr 1fr; gap: 20px; }
-  .gallery { gap: 12px; }
+  .gallery { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
   .dealers-inner { grid-template-columns: 0.9fr 1.1fr; gap: 56px; align-items: center; }
   .features { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .feature { grid-template-columns: 1fr; }
