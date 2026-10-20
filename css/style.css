@@ -385,3 +385,13 @@ body.has-action-bar { padding-bottom: 84px; }
 @media (min-width: 760px) {
   .section.packages { padding-top: 16px; }
 }
+
+/* Van cargo area: short video next to the photo pair */
+.ba-video-row { display: grid; gap: 14px; }
+.ba-video { margin: 0; width: 100%; max-width: 340px; justify-self: center; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); background: #000; }
+.ba-video video { display: block; width: 100%; aspect-ratio: 9 / 16; object-fit: cover; }
+.ba-video figcaption { padding: 8px 12px; font-size: 0.85rem; color: var(--muted); }
+.ba img.pos-low { object-position: 50% 75%; }
+@media (min-width: 760px) {
+  .ba-video-row { grid-template-columns: 300px 1fr; align-items: center; }
+}

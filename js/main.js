@@ -65,3 +65,13 @@
     node.parentNode.replaceChild(frag, node);
   });
 })();
+
+// Respect "reduce motion": no autoplaying video for those visitors
+(function () {
+  if (!window.matchMedia || !window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  document.querySelectorAll("video[autoplay]").forEach(function (v) {
+    v.removeAttribute("autoplay");
+    v.pause();
+    v.setAttribute("controls", "");
+  });
+})();
