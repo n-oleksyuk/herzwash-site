@@ -395,3 +395,21 @@ body.has-action-bar { padding-bottom: 84px; }
 @media (min-width: 760px) {
   .ba-video-row { grid-template-columns: 300px 1fr; align-items: center; }
 }
+
+/* Extra next to the packages (Motorreinigung) */
+.extra {
+  display: grid; grid-template-columns: 88px 1fr; gap: 14px 16px; align-items: center; margin-top: 14px;
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px;
+}
+.extra .no { font: 700 0.95rem/1 var(--font-cond); color: var(--gold); letter-spacing: 0.1em; text-transform: uppercase; }
+.extra img { width: 88px; height: 88px; object-fit: cover; border-radius: 12px; }
+.extra h3 { font: 700 1.4rem/1.1 var(--font-cond); text-transform: uppercase; margin-top: 4px; }
+.extra p { color: var(--muted); font-size: 0.95rem; margin-top: 4px; }
+.extra-side { grid-column: 1 / -1; display: flex; align-items: center; justify-content: space-between; gap: 12px; border-top: 1px solid var(--line); padding-top: 12px; }
+.extra-price { font: 700 1.6rem/1 var(--font-cond); white-space: nowrap; }
+.extra-price small { font: 500 0.85rem/1 var(--font); color: var(--muted); }
+@media (min-width: 760px) {
+  .extra { grid-template-columns: 120px 1fr auto; padding: 18px 24px 18px 18px; }
+  .extra img { width: 120px; height: 90px; }
+  .extra-side { grid-column: auto; border-top: 0; padding-top: 0; gap: 20px; }
+}
