@@ -64,7 +64,7 @@
       </ul>
     </nav>
     <div class="header-actions">
-      <a class="btn btn-gold btn-sm btn-book" href="#kontakt"><svg class="icon"><use href="#i-calendar"/></svg>Termin buchen</a>
+      <a class="btn btn-gold btn-sm btn-book" href="#leistungen"><svg class="icon"><use href="#i-sparkles"/></svg>Paket wählen</a>
       <a class="icon-btn call-btn" href="tel:+4915563826923" aria-label="Anrufen"><svg class="icon"><use href="#i-phone"/></svg></a>
       <button class="icon-btn nav-toggle" type="button" aria-controls="nav" aria-expanded="false" aria-label="Menü öffnen">
         <svg class="icon icon-menu"><use href="#i-menu"/></svg>
@@ -87,8 +87,7 @@
         </h1>
         <p class="lead">Handwäsche statt Waschstraße: vom Paket Innen &amp; Außen bis zur Komplettaufbereitung mit Politur und Chemischer Reinigung — gründlich, schonend und mit Liebe zum Detail. An der Ronsdorfer Straße in Düsseldorf.</p>
         <div class="hero-cta">
-          <!-- TERMIN-LINK: today WhatsApp; later the Telegram booking bot -->
-          <a class="btn btn-gold" href="https://wa.me/4915563826923?text=Hallo%20HerzWash%2C%20ich%20m%C3%B6chte%20einen%20Termin%20buchen." target="_blank" rel="noopener"><svg class="icon"><use href="#i-calendar"/></svg>Termin buchen</a>
+          <a class="btn btn-gold" href="#leistungen"><svg class="icon"><use href="#i-sparkles"/></svg>Paket wählen</a>
           <a class="btn btn-line" href="https://wa.me/4915563826923" target="_blank" rel="noopener"><svg class="icon"><use href="#i-chat"/></svg>WhatsApp</a>
           <a class="btn btn-line" href="tel:+4915563826923"><svg class="icon"><use href="#i-phone"/></svg>Anrufen</a>
         </div>
@@ -104,28 +103,15 @@
     </div>
   </section>
 
-  <!-- VALUES (from the HerzWash flyer) -->
-  <section class="values" aria-label="Was uns ausmacht">
-    <div class="wrap">
-      <ul>
-        <li><svg class="icon"><use href="#i-sparkles"/></svg>Handwäsche statt Automatik</li>
-        <li><svg class="icon"><use href="#i-heart"/></svg>Hochwertige Produkte</li>
-        <li><svg class="icon"><use href="#i-access"/></svg>Barrierefrei</li>
-        <li><svg class="icon"><use href="#i-users"/></svg>Senioren willkommen</li>
-        <li><svg class="icon"><use href="#i-paw"/></svg>Tierfreundlich</li>
-      </ul>
-    </div>
-  </section>
-
   <!-- SERVICES -->
-  <section class="section" id="leistungen">
+  <section class="section packages" id="leistungen">
     <div class="wrap">
       <div class="section-head">
         <div>
-          <span class="eyebrow">Leistungen &amp; Preise</span>
-          <h2 class="h2">Was wir für Ihr <em>Auto</em> tun</h2>
+          <span class="eyebrow">Unsere Pakete</span>
+          <h2 class="h2">Wählen Sie Ihr <em>Paket</em></h2>
         </div>
-        <p>Zwei Pakete, alle Arbeiten von Hand. Den genauen Preis nennen wir Ihnen vorher.</p>
+        <p>Zwei Pakete, alle Arbeiten von Hand. Paket wählen, Nachricht per WhatsApp abschicken — wir melden uns mit einem freien Termin.</p>
       </div>
 
       <div class="services">
@@ -143,7 +129,9 @@
               <ul class="checks"><li>Staubsaugen</li><li>Scheiben innen</li><li>Kunststoffe und Armaturen abwischen</li></ul>
             </div>
           </div>
-                    <div class="price"><span>ab</span><strong>[PREIS-INNEN-AUSSEN] €</strong></div>
+          <div class="price"><span>ab</span><strong>[PREIS-INNEN-AUSSEN] €</strong></div>
+          <!-- TERMIN-LINK: package buttons open WhatsApp until the bot can book private clients -->
+          <a class="btn btn-gold pkg-btn" href="https://wa.me/4915563826923?text=Hallo%20HerzWash%2C%20ich%20m%C3%B6chte%20das%20Paket%20%E2%80%9EInnen%20%26%20Au%C3%9Fen%E2%80%9C%20buchen.%20Meine%20W%C3%BCnsche%3A%20" target="_blank" rel="noopener"><svg class="icon"><use href="#i-chat"/></svg>Dieses Paket wählen</a>
         </article>
         <article class="service featured">
           <span class="badge">Alles in einem</span>
@@ -160,28 +148,44 @@
               <ul class="checks"><li>Komplette Chemische Reinigung von Sitzen und Teppichen</li><li>Innenraum-Tiefenreinigung bis in die Ecken</li></ul>
             </div>
           </div>
-                    <div class="price"><span>ab</span><strong>[PREIS-KOMPLETT] €</strong></div>
+          <div class="price"><span>ab</span><strong>[PREIS-KOMPLETT] €</strong></div>
+          <a class="btn btn-gold pkg-btn" href="https://wa.me/4915563826923?text=Hallo%20HerzWash%2C%20ich%20m%C3%B6chte%20das%20Paket%20%E2%80%9EKomplettpaket%E2%80%9C%20buchen.%20Meine%20W%C3%BCnsche%3A%20" target="_blank" rel="noopener"><svg class="icon"><use href="#i-chat"/></svg>Dieses Paket wählen</a>
         </article>
       </div>
+      <p class="price-note"><strong>Besondere Wünsche?</strong> Aufkleber, hartnäckige Flecken, Kratzer oder anderes einfach in die Nachricht schreiben — den Preis dafür nennen wir Ihnen vorher.</p>
       <p class="price-note">[MWST-HINWEIS]</p>
     </div>
   </section>
 
+  <!-- VALUES (from the HerzWash flyer) -->
+  <section class="values" aria-label="Was uns ausmacht">
+    <div class="wrap">
+      <ul>
+        <li><svg class="icon"><use href="#i-sparkles"/></svg>Handwäsche statt Automatik</li>
+        <li><svg class="icon"><use href="#i-heart"/></svg>Hochwertige Produkte</li>
+        <li><svg class="icon"><use href="#i-access"/></svg>Barrierefrei</li>
+        <li><svg class="icon"><use href="#i-users"/></svg>Senioren willkommen</li>
+        <li><svg class="icon"><use href="#i-paw"/></svg>Tierfreundlich</li>
+      </ul>
+    </div>
+  </section>
+
   <!-- BEFORE / AFTER + GALLERY -->
-  <section class="section" id="vorher-nachher" style="padding-top:0">
+  <section class="section" id="vorher-nachher">
     <div class="wrap">
       <div class="section-head">
         <div>
           <span class="eyebrow">Galerie</span>
           <h2 class="h2">Vorher / <em>Nachher</em></h2>
         </div>
-        <p>Politur und Lackaufbereitung — echte Fotos aus unserem Studio, links vorher, rechts nachher.</p>
+        <p>Lack und Innenraum — echte Fotos aus unserem Studio, links vorher, rechts nachher.</p>
       </div>
 
+      <h3 class="ba-title">Lack &amp; Politur</h3>
       <div class="ba-list">
         <figure class="ba">
-          <figure><img src="img/politur-1-vorher.webp" width="900" height="444" loading="lazy" alt="Außenspiegel mit Kratzern und Swirls vor der Politur"><span class="tag">Vorher</span></figure>
-          <figure><img src="img/politur-1-nachher.webp" width="900" height="444" loading="lazy" alt="Derselbe Außenspiegel glänzend nach der Politur"><span class="tag after">Nachher</span></figure>
+          <figure><img src="img/politur-1-vorher.webp?v=2" width="900" height="444" loading="lazy" alt="Außenspiegel mit Kratzern und Swirls vor der Politur"><span class="tag">Vorher</span></figure>
+          <figure><img src="img/politur-1-nachher.webp?v=2" width="900" height="444" loading="lazy" alt="Derselbe Außenspiegel glänzend nach der Politur"><span class="tag after">Nachher</span></figure>
         </figure>
         <figure class="ba">
           <figure><img src="img/politur-2-vorher.webp" width="900" height="439" loading="lazy" alt="Schwarzer Lack mit feinen Kratzern vor der Politur"><span class="tag">Vorher</span></figure>
@@ -194,6 +198,19 @@
         <figure class="ba">
           <figure><img src="img/politur-4-vorher.webp" width="900" height="385" loading="lazy" alt="Heckklappe mit Kratzer am Rücklicht vor der Politur"><span class="tag">Vorher</span></figure>
           <figure><img src="img/politur-4-nachher.webp" width="900" height="385" loading="lazy" alt="Heckklappe ohne sichtbare Kratzer nach der Politur"><span class="tag after">Nachher</span></figure>
+        </figure>
+      </div>
+
+      <!-- Interior photos are still missing: replace each .ph-img div with an <img> like the pairs above -->
+      <h3 class="ba-title">Innenraum</h3>
+      <div class="ba-list">
+        <figure class="ba">
+          <figure><div class="ph-img"><span>[FOTO-INNEN-1-VORHER]</span></div><span class="tag">Vorher</span></figure>
+          <figure><div class="ph-img"><span>[FOTO-INNEN-1-NACHHER]</span></div><span class="tag after">Nachher</span></figure>
+        </figure>
+        <figure class="ba">
+          <figure><div class="ph-img"><span>[FOTO-INNEN-2-VORHER]</span></div><span class="tag">Vorher</span></figure>
+          <figure><div class="ph-img"><span>[FOTO-INNEN-2-NACHHER]</span></div><span class="tag after">Nachher</span></figure>
         </figure>
       </div>
 
@@ -336,7 +353,7 @@
 <nav class="action-bar" aria-label="Schnellkontakt">
   <a href="tel:+4915563826923"><svg class="icon"><use href="#i-phone"/></svg>Anrufen</a>
   <a href="https://wa.me/4915563826923" target="_blank" rel="noopener"><svg class="icon"><use href="#i-chat"/></svg>WhatsApp</a>
-  <a class="primary" href="https://wa.me/4915563826923?text=Hallo%20HerzWash%2C%20ich%20m%C3%B6chte%20einen%20Termin%20buchen." target="_blank" rel="noopener"><svg class="icon"><use href="#i-calendar"/></svg>Termin</a>
+  <a class="primary" href="#leistungen"><svg class="icon"><use href="#i-sparkles"/></svg>Pakete</a>
 </nav>
 
 <script src="js/main.js"></script>
